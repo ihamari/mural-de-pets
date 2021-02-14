@@ -1,0 +1,50 @@
+header {
+    height: 80px;
+    padding: 15px;
+    background-color: rgb(50, 89, 104);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right {
+    /* border:2px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /**/
+}
+
+.header-left {
+    /* border: 2px solid blue; */
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.header-left h1 {
+    font-size: 36px;
+    /* border: 2px solid blue; */
+    padding-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(255, 255, 255);
+}
+
+input {
+    border-radius: 30px;
+    height: 2.5em;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 35px;
+    background-image: url(../icons/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 6px 6px;
+    color: white;
+    caret-color: solid white;
+}
+
+input:focus {
+    outline: none;
+}

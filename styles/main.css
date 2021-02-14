@@ -1,0 +1,41 @@
+main{
+    padding: 20px;
+}
+
+.banner-principal{
+    border: 2px solid red;
+    padding: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    /* background-color:rgb(243, 238, 221); */
+}
+
+.banner-principal img{
+    float: left;
+    width: 500px;
+    object-fit: cover;
+    transform: rotate(-5deg);
+    margin-bottom: auto;
+    margin-top: auto;
+    border: 2px solid red;
+}
+
+.descricao{
+    border: 2px solid red;
+    width: 100%;
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: rgb(241, 223, 198);
+}
+
+.descricao h2{
+    font-size: 2em;
+    padding: 15px;
+}
+
+.descricao p{
+    padding: 15px;
+}
