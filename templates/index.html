@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./static/icons/track.png">
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./static/styles/reset.css">
+    <link rel="stylesheet" href="./static/styles/main.css">
+    <link rel="stylesheet" href="./static/styles/body.css">
+    <link rel="stylesheet" href="./static/styles/header.css">
+    <link rel="stylesheet" href="./static/styles/cards.css">
+    <title>Mural de Pets</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img class=icon src="./static/icons/pata.png" alt="">
+            <h1>Mural de Pets</h1>
+        </div>
+        <div class="header-right">
+            <h1>Olá {{ nome_usuario }}</h1> <!--chaves duplas eh padrao no jinja2 para fazer template dos dados -->
+            <input type="search">
+        </div>
+    </header>
+    <main>
+        <div class="banner-principal">
+            <img src="./static/img/dog-com-polaroid.jpeg" alt="cachorro pequeno com a pata em uma camera polaroid">
+            <div class="descricao">
+                <h2>Bem Vindo(a)!</h2><br>
+                <p>Esse site é dedicado a todos os nossos amados bichinhos de estimação e tem como objetivo juntar o
+                    máximo possível de fotos de pets! Não importa a espécie ou a raça, se você quer compartilhar seu
+                    animal de estimação para o nosso mural clique no botão abaixo e selecione três fotos do seu querido
+                    animalzinho e faça uma descrição prévia, clique em salvar e seu bichinho estará junto com os outros
+                    pets do mural!
+                </p>
+                <button>Adicionar meu pet!</button>
+            </div>
+        </div>
+        <div class="box">
+            {% for pet in lista_pets %}
+            <div class="card">
+                <div class="imgBx">
+                    <img src="{{ pet.imagem }}" alt="">
+                </div>
+                <div class="details">
+                    <h2>{{pet.nome}}</h2>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+
+</html>

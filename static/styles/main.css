@@ -1,0 +1,52 @@
+main{
+    padding: 20px;
+}
+
+.banner-principal{
+    /* border: 2px solid red; */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(234, 224, 213);
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-principal img{
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+    /* border: 2px solid red; */
+}
+
+.descricao{
+    padding: 2em;
+    /* border: 2px solid red; */
+    font-size: 1.25em;
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgb(34, 52, 59);
+}
+
+.descricao h2{
+    font-size: 1.5em;
+}
+
+
+.descricao button{
+    color: white;
+    font-size: 16px;
+    height: 4.5em;
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4.5em;
+    padding-right: 1em;
+    background: url('/static/icons/camera-polaroid.png') no-repeat 7px 7px;
+    background-size: 3.5em 3.5em;
+    background-color: rgb(85, 130, 139);
+}

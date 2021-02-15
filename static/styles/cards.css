@@ -6,7 +6,7 @@
     grid-gap: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    padding-top: 4.5em;
   }
   .card{
     position: relative;
@@ -51,7 +51,6 @@
   background: #222;
   transition: 0.5s;
   z-index: 1;
-
   }
   
 

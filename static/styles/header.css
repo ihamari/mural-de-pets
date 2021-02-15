@@ -40,7 +40,7 @@ input {
     background-image: url(../icons/lupa.png);
     background-repeat: no-repeat;
     background-size: 10%;
-    background-position: 6px 6px;
+    background-position: 8px 8px;
     color: white;
     caret-color: solid white;
 }
@@ -48,3 +48,7 @@ input {
 input:focus {
     outline: none;
 }
+
+.icon{
+    height: 100%;
+  }
