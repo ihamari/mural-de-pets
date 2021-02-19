@@ -11,7 +11,8 @@ api = Api(app)
 
 
 api.add_resource(Index, '/', '/<string:nome>')
-api.add_resource(PetsResource,'/pets')
+api.add_resource(PetsResource,'/pets','/pets/<int:id>')
+
 
 if __name__ == '__main__':
     app.run(debug=True) # Para n ser necessario rodar o programa de novo a cada save
